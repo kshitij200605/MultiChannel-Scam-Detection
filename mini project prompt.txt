@@ -1,0 +1,413 @@
+You are a Senior Cybersecurity Engineer, AI Engineer, and Full Stack Developer.
+
+Build the foundation architecture for the project:
+
+Project Name:
+"Multi-Channel Scam Detection System for Emails, Messages, and Web Links Using AI"
+
+Project Goal:
+Develop a Chrome Extension that allows users to highlight any text on a webpage and instantly analyze whether it contains scam or social engineering content.
+
+Important Requirements:
+
+1. User should NOT manually paste text.
+2. User selects text on any webpage.
+3. Right-click → Analyze Scam Risk.
+4. Extension captures selected text automatically.
+5. Modern Light Theme UI.
+6. No dark mode.
+7. Chrome Manifest V3.
+8. React + Tailwind frontend.
+9. FastAPI backend.
+10. Python AI engine.
+
+Generate:
+
+1. Complete system architecture
+2. Folder structure
+3. Data flow diagram
+4. Extension architecture
+5. Backend architecture
+6. Database schema
+7. API design
+8. Development roadmap
+
+Do not generate code yet.
+Only architecture and planning.
+
+
+___________________________________________________________________________
+
+
+Dataset Requirements:
+
+Create a unified supervised learning dataset.
+
+Final labels:
+
+1. phishing
+2. otp_fraud
+3. fake_job
+4. investment_scam
+5. crypto_scam
+6. impersonation
+7. lottery_scam
+8. tech_support_scam
+9. upi_fraud
+10. legitimate
+
+Combine datasets from:
+
+- SMS Spam Collection
+- Enron Email Dataset
+- Nazario Phishing Corpus
+- Fraudulent Job Postings Dataset
+- Phishing URL Dataset
+- OpenPhish
+- Custom collected scam samples
+
+Generate:
+
+1. Dataset merging script
+2. Label standardization process
+3. Train/Validation/Test split
+4. Class balancing strategy
+5. Data augmentation strategy
+6. Final CSV schema
+
+Use supervised learning.
+
+___________________________________________________________________________
+Phase 1: Baseline Models
+
+1. TF-IDF + Random Forest
+2. TF-IDF + XGBoost
+
+Tasks:
+- Train models
+- Evaluate Accuracy, Precision, Recall, F1
+- Generate confusion matrices
+- Store results
+
+Phase 2: Transformer Models
+
+1. DistilBERT
+2. RoBERTa
+
+Tasks:
+- Fine-tune on scam dataset
+- Evaluate metrics
+- Compare with baseline models
+
+Phase 3: Ensemble Learning
+
+Combine:
+
+- Random Forest
+- DistilBERT
+- RoBERTa
+
+Methods:
+- Soft Voting
+- Weighted Voting
+
+Output:
+- Final scam prediction
+- Confidence score
+
+Phase 4: Explainability
+
+- SHAP
+- LIME
+- Keyword highlighting
+
+Phase 5: Risk Scoring
+
+Generate:
+- Risk Score (0-100)
+- Severity Level
+- Scam Category
+- Recommended Action
+
+
+
+___________________________________________________________________________
+
+
+Current Status:
+
+✔ Architecture Completed
+✔ Dataset Pipeline Completed
+✔ Random Forest Completed
+✔ XGBoost Completed
+✔ DistilBERT Completed
+✔ RoBERTa Completed
+✔ Ensemble Model Completed
+
+Now build the complete production-ready backend and Chrome extension.
+
+==================================================
+BACKEND REQUIREMENTS
+==================================================
+
+Framework:
+- FastAPI
+
+Functions:
+
+1. Receive selected webpage text
+2. Receive current webpage URL
+3. Run scam analysis
+4. Run URL analysis
+5. Run risk scoring
+6. Run explainability module
+
+API Response:
+
+{
+  "prediction": "",
+  "risk_score": 0,
+  "confidence": 0,
+  "severity": "",
+  "scam_type": "",
+  "suspicious_keywords": [],
+  "explanation": "",
+  "recommendation": ""
+}
+
+==================================================
+CHROME EXTENSION REQUIREMENTS
+==================================================
+
+Manifest Version:
+- Manifest V3
+
+Workflow:
+
+User selects text
+        ↓
+Right Click
+        ↓
+Analyze Scam Risk
+        ↓
+Send text + URL to FastAPI
+        ↓
+Receive results
+        ↓
+Display popup
+
+==================================================
+UI REQUIREMENTS
+==================================================
+
+Design:
+- Modern
+- Professional
+- Cybersecurity themed
+- Light Theme ONLY
+- No dark mode
+
+Framework:
+- React
+- Tailwind CSS
+
+Display:
+
+1. Scam Category
+2. Risk Score
+3. Confidence Score
+4. Severity Level
+5. Suspicious Keywords
+6. Explanation
+7. Recommendation
+
+==================================================
+EXTENSION FEATURES
+==================================================
+
+1. Context Menu Support
+2. Selected Text Capture
+3. Current URL Capture
+4. Loading Animation
+5. Error Handling
+6. Offline Detection
+7. API Retry Logic
+8. History of Previous Scans
+
+==================================================
+GENERATE
+
+1. Complete Folder Structure
+2. FastAPI Backend Code
+3. API Endpoints
+4. React Popup UI
+5. Tailwind Styling
+6. Manifest.json
+7. Background Script
+8. Content Script
+9. State Management
+10. Extension Build Process
+
+Generate production-grade code.
+
+
+___________________________________________________________________________
+
+
+Keep all existing functionality.
+
+==================================================
+THREAT INTELLIGENCE FEATURES
+==================================================
+
+Integrate:
+
+1. VirusTotal API
+2. AbuseIPDB API
+3. OpenPhish Feed
+4. URLHaus Feed
+5. Google Safe Browsing API
+
+Capabilities:
+
+- URL reputation analysis
+- Domain reputation analysis
+- Known phishing detection
+- IOC matching
+- Blacklist checking
+
+==================================================
+DIGITAL FORENSICS FEATURES
+==================================================
+
+Implement forensic investigation modules.
+
+Use Kali Linux compatible tools:
+
+1. Whois
+2. DNSRecon
+3. TheHarvester
+4. URLCrazy
+5. ExifTool
+6. YARA
+
+==================================================
+FORENSIC ANALYSIS REQUIREMENTS
+==================================================
+
+For URLs:
+
+- Domain Age Analysis
+- Domain Registration Check
+- WHOIS Analysis
+- DNS Record Analysis
+- Redirect Chain Analysis
+- Typosquatting Detection
+
+For Webpages:
+
+- Suspicious Keyword Analysis
+- Embedded Link Extraction
+- IOC Extraction
+- Social Engineering Indicators
+
+For Emails:
+
+- Header Analysis
+- SPF Validation
+- DKIM Validation
+- Sender Reputation Analysis
+
+==================================================
+THREAT SCORING ENGINE
+==================================================
+
+Risk Score Components:
+
+AI Scam Score:
+40%
+
+URL Reputation:
+25%
+
+Domain Reputation:
+15%
+
+Threat Intelligence:
+10%
+
+Forensic Indicators:
+10%
+
+Generate final score:
+
+0-30 = Safe
+31-60 = Suspicious
+61-80 = High Risk
+81-100 = Scam
+
+==================================================
+DASHBOARD REQUIREMENTS
+==================================================
+
+Create dashboard showing:
+
+1. Total Scans
+2. Scam Categories
+3. Top Threats
+4. Risk Trends
+5. Most Common Keywords
+6. Phishing Domains Detected
+7. Threat Intelligence Matches
+
+==================================================
+ADVANCED FEATURES
+==================================================
+
+1. Multi-language Detection
+2. QR Code Scam Detection
+3. Screenshot OCR Analysis
+4. Batch URL Analysis
+5. Scam Pattern Analytics
+6. Export PDF Reports
+7. Investigation History
+8. IOC Database
+
+==================================================
+SECURITY REQUIREMENTS
+==================================================
+
+1. Rate Limiting
+2. API Authentication
+3. Secure Storage
+4. Input Validation
+5. OWASP Compliance
+6. Logging and Auditing
+
+==================================================
+GENERATE
+
+1. Complete Enterprise Architecture
+2. Threat Intelligence Workflow
+3. Digital Forensics Workflow
+4. Dashboard Architecture
+5. API Integrations
+6. Database Design
+7. Deployment Strategy
+8. Scalability Plan
+9. Security Design
+10. Production-Ready Implementation
+
+Generate complete implementation with code and documentation.
+
+
+
+
+
+
+
+
+
+
+
+
